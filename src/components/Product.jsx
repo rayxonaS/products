@@ -8,14 +8,13 @@ function Product({ d }) {
       {showModal && <Modal setShowModal={setShowModal} d={d} />}
       <div>
         <img
-          onClick={() => setShowModal(true)}
           className="product-image"
           src={d.image.thumbnail}
           alt={d.name}
           srcSet={`${d.image.desktop}`}
         />
         <div className="cart-button">
-          <button className="button">
+          <button onClick={() => setShowModal(true)} className="button">
             <img
               className="cart-image "
               src="./images/icon-add-to-cart.svg"
