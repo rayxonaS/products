@@ -168,6 +168,7 @@ body {
   color: var(--color-rose-500);
   margin-top: 1.6rem;
   margin-bottom: 4px;
+  font-weight: 400;
 }
 
 .name {
@@ -187,4 +188,51 @@ body {
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 2.4rem;
+
+  &:hover {
+    border-color: var(--color-red);
+  }
+}
+
+.product-grid:hover {
+  border-color: var(--color-red);
+}
+
+.cart-button {
+  align-items: center;
+  justify-content: center;
+  padding-left: 2.4rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 44px;
+  border-radius: 999px;
+  background-color: var(--color-white);
+  font-size: var(--font-size-preset-4);
+  font-weight: 600;
+  color: var(--color-rose-900);
+  gap: 8px;
+  border-color: var(--color-rose-400);
+}
+
+.cart-image {
+  width: 20px;
+  height: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 592px;
+  height: 685px;
+  border-radius: 12px;
+  padding: 4rem;
 }

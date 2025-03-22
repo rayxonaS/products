@@ -1,3 +1,4 @@
+import Modal from "./Modal";
 import Product from "./Product";
 
 function ProductList({ desserts, isPending }) {
@@ -11,6 +12,7 @@ function ProductList({ desserts, isPending }) {
             return <Product key={d.id} d={d} />;
           })}
       </div>
+      <Modal />
     </div>
   );
 }
