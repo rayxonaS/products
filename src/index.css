@@ -235,4 +235,122 @@ body {
   height: 685px;
   border-radius: 12px;
   padding: 4rem;
+  background-color: var(--color-white);
+}
+
+.modal-list {
+  width: 512px;
+  height: 339px;
+  background-color: var(--color-rose-50);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+  padding: 20px;
+}
+
+.modal-image {
+  width: 48px;
+  height: 48px;
+}
+
+.modal-container {
+  display: flex;
+  gap: 8px;
+}
+
+.total-price {
+  font-size: var(--font-size-preset-3);
+  line-height: var(--letter-spacing-preset-3);
+  font-weight: 600;
+  color: var(--color-rose-900);
+  margin-left: auto;
+}
+
+.modal-category {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  font-weight: 600;
+  color: var(--color-rose-900);
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+.modal-price {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  font-weight: 400;
+  color: var(--color-rose-500);
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-text {
+  font-size: var(--font-size-preset-1);
+  line-height: var(--line-height-preset-1);
+  font-weight: 700;
+  color: var(--color-rose-900);
+  margin-top: 2.4rem;
+}
+
+.modal-content {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-rose-500);
+  margin-top: 8px;
+  margin-bottom: 3.2rem;
+}
+
+.order-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  color: var(--color-rose-900);
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
+.order-price {
+  font-size: var(--font-size-preset-2);
+  line-height: var(--line-height-preset-2);
+  color: var(--color-rose-900);
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.modal-button {
+  width: 512px;
+  height: 53px;
+  border-radius: 999px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: var(--color-red);
+  font-size: var(--font-size-preset-3);
+  line-height: var(--line-height-preset-3);
+  font-weight: 600;
+  color: var(--color-white);
+  padding: 1.6rem 19rem 1.6rem 19rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
 }

@@ -1,8 +1,14 @@
+import { useState } from "react";
+import Modal from "./Modal";
+
 function Product({ d }) {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="product-grid">
+    <div>
+      {showModal && <Modal setShowModal={setShowModal} d={d} />}
       <div>
         <img
+          onClick={() => setShowModal(true)}
           className="product-image"
           src={d.image.thumbnail}
           alt={d.name}
@@ -11,7 +17,7 @@ function Product({ d }) {
         <div className="cart-button">
           <button className="button">
             <img
-              className="cart-image"
+              className="cart-image "
               src="./images/icon-add-to-cart.svg"
               alt=""
             />
