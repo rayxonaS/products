@@ -203,7 +203,7 @@ body {
 .cart-button {
   align-items: center;
   justify-content: center;
-  padding-left: 2.4rem;
+  padding-left: 2rem;
 }
 
 .button {
@@ -345,16 +345,6 @@ body {
   padding: 1.6rem 19rem 1.6rem 19rem;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
-}
-
 @media screen and (max-width: 800px) {
   .container {
     width: 100%;
@@ -399,5 +389,48 @@ body {
     max-width: 327px;
     height: 300px;
     border-radius: 4%;
+  }
+
+  .cart-button {
+    align-items: center;
+    justify-content: center;
+    padding-left: 7.4rem;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: 717px;
+    border-radius: 12px;
+    padding: 4rem;
+    background-color: var(--color-white);
+  }
+
+  .modal-button {
+    width: 327px;
+    height: 53px;
+    border-radius: 999px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-red);
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height-preset-3);
+    font-weight: 600;
+    color: var(--color-white);
+    padding: 1.6rem 10rem 1.6rem 10rem;
+  }
+
+  .modal-list {
+    width: 327px;
+    height: 339px;
+    background-color: var(--color-rose-50);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+    padding: 20px;
   }
 }
