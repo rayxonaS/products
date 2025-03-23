@@ -354,3 +354,43 @@ body {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-container {
+    width: 100%;
+    max-width: 668px;
+    height: 342px;
+    border-radius: 4%;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .container {
+    width: 100%;
+    max-width: 460px;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 327px;
+  }
+}
